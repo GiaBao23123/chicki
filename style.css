@@ -363,6 +363,29 @@ a:active {
     0 0 60px orange;
   animation: grow 2s ease-out forwards;
 }
+.star-sharp {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(gold);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  box-shadow:
+    0 0 12px gold,
+    0 0 25px gold,
+    0 0 40px orange;
+}
+
 @keyframes grow {
   0% {
     transform: scale(0.2);
@@ -769,7 +792,11 @@ section {
     var(--accent-yellow)
   );
 }
-
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* cho phép kéo ngang */
+  -webkit-overflow-scrolling: touch; /* mượt trên iOS */
+}
 .timeline {
   position: relative;
   max-width: 1000px;
@@ -1364,6 +1391,12 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.star-sharp {
+  font-family: "Font Awesome 6 Sharp";
+  font-weight: 900;
+  color: gold;
+  font-size: 24px;
 }
 
 .footer-personal i {
