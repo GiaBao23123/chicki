@@ -267,40 +267,6 @@ a:active {
 }
 
 /* 📱 Responsive cho điện thoại */
-@media (max-width: 768px) {
-  .mineral-table thead {
-    display: none;
-  }
-
-  .mineral-table,
-  .mineral-table tbody,
-  .mineral-table tr,
-  .mineral-table td {
-    display: block;
-    width: 100%;
-  }
-
-  .mineral-table tr {
-    margin-bottom: 16px;
-    border-radius: 10px;
-    background: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  }
-
-  .mineral-table td {
-    padding: 12px 14px;
-    position: relative;
-  }
-
-  .mineral-table td::before {
-    content: attr(data-label);
-    font-weight: 600;
-    color: #1a5c3d;
-    display: block;
-    margin-bottom: 4px;
-    font-size: 13px;
-  }
-}
 
 /* ===== HERO SECTION ===== */
 .hero-section {
