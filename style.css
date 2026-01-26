@@ -92,7 +92,6 @@ a {
 .buu ul {
   list-style: none;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -1548,4 +1547,15 @@ section {
     padding: 0;
     font-size: 1.1rem;
   }
+}
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-icon {
+  display: block;
+  font-size: 32px;
+  line-height: 1;
 }
