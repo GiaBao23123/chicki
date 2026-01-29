@@ -329,11 +329,12 @@ a:active {
     0 0 60px orange;
   animation: grow 2s ease-out forwards;
 }
+
 .only-safari {
   display: none;
 }
 
-@supports (-webkit-touch-callout: none) {
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
   .only-safari {
     display: block;
   }
