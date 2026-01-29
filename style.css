@@ -329,6 +329,16 @@ a:active {
     0 0 60px orange;
   animation: grow 2s ease-out forwards;
 }
+.only-safari {
+  display: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .only-safari {
+    display: block;
+  }
+}
+
 .star-sharp {
   position: relative;
   width: 40px;
@@ -1558,4 +1568,10 @@ section {
   display: block;
   font-size: 32px;
   line-height: 1;
+}
+/* CHỈ Safari (desktop + mobile) */
+@supports (-webkit-appearance: none) and (stroke-color: transparent) {
+  .only-safari {
+    display: block;
+  }
 }
