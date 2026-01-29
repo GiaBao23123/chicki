@@ -331,7 +331,10 @@ a:active {
 }
 
 .only-safari {
-  display: none !important;
+  display: none;
+}
+.is-safari .only-safari {
+  display: block !important;
 }
 
 /* Safari only */

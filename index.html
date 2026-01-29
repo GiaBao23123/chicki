@@ -315,6 +315,11 @@ a {text-decoration: underline;}
 </style>
   </head>
   <body>
+    <script>
+if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+  document.documentElement.classList.add("is-safari");
+}
+</script>
 <div id="backToTop">
   <a href="#hero" aria-label="Lên đầu trang">
     <span class="arrow arrow-1"></span>
