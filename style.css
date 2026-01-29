@@ -331,12 +331,13 @@ a:active {
 }
 
 .only-safari {
-  display: none;
+  display: none !important;
 }
 
+/* Safari only */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
   .only-safari {
-    display: block;
+    display: block !important;
   }
 }
 
