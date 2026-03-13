@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIỆT NAM MUÔN MÀU</title>
+    <title>VIỆT NAM</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,9 +32,9 @@ hr {
   position: relative;
   background: linear-gradient(
     90deg,
-    #0a3d2e, /* xanh quân đội */
-    #c8102e, /* đỏ cờ */
-    #ffcd00  /* vàng cờ */
+    #0a3d2e, 
+    #c8102e, 
+    #ffcd00  
   );
 }
 #backToTop {
@@ -44,8 +44,6 @@ hr {
   z-index: 9999;
   display: none;
 }
-
-/* Nút */
 #backToTop a {
   width: 46px;
   height: 46px;
@@ -60,13 +58,10 @@ hr {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 #backToTop a:hover {
   transform: translateY(-4px);
   background: linear-gradient(135deg, #9ccc65, #689f38);
 }
-
-/* Mũi tên */
 .arrow {
   width: 10px;
   height: 10px;
@@ -74,33 +69,25 @@ hr {
   border-top: 3px solid #fff;
   transform: rotate(45deg);
 }
-
-/* Hiệu ứng mũi tên động */
 .arrow-1 {
   animation: arrowUp 1.4s infinite;
 }
-
 .arrow-2 {
   animation: arrowUp 1.4s infinite;
   animation-delay: 0.2s;
 }
-
-
-/* 📱 Mobile */
 @media (max-width: 600px) {
   #backToTop a {
     width: 42px;
     height: 42px;
   }
 }
-
 a:hover {
   color: red;
   text-decoration: underline;
 }
 a {text-decoration: underline;}
 .bu a {text-decoration: none;}
-/* Biểu tượng hamburger mặc định ẩn */
 .menu-icon {
   padding: 10px;
   display: none;
@@ -117,31 +104,23 @@ a {text-decoration: underline;}
   position: fixed;
   top: 14px;
   right: 14px;
-
   font-size: 26px;
   padding: 12px 16px;
   border-radius: 12px;
-
   background: linear-gradient(
     145deg,
-    #2e8b57,  /* xanh olive sáng */
-    #1f6f4a   /* xanh quân đội vừa */
+    #2e8b57,  
+    #1f6f4a   
   ) !important;
-
   color: #ffffff;
   cursor: pointer;
-
-  /* HIỆU ỨNG NỔI */
   box-shadow:
     0 6px 16px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
-
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
-
-/* Menu mặc định hiện luôn */
 .menu {
   list-style: none;
   position: fixed;
@@ -150,14 +129,11 @@ a {text-decoration: underline;}
   width: 300px;
   height: 100vh;
   padding-top: 70px;
-
-  /* XANH QUÂN ĐỘI */
   background: linear-gradient(
     180deg,
     #0a3d2e,
     #1a5c3d
   ) !important;
-
   z-index: 1000;
   transition: right 0.4s ease;
 }
@@ -173,49 +149,35 @@ a {text-decoration: underline;}
     0 10px 22px rgba(0, 0, 0, 0.55),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
-
-/* hiệu ứng mượt khi rê */
 .menu-scroll a {
   transition: transform 0.25s ease;
 }
-
-/* pulse nhẹ – không quá màu mè */
 .menu-scroll a:hover {
   animation: pulse 1s infinite;
 }
-
-/* bật menu */
 #menu-toggle:checked ~ .menu {
   right: 0;
 }
-
-/* LINK */
 .menu a {
   display: block;
   padding: 12px 20px;
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
-
   transition:
     transform 0.25s ease,
     background 0.25s,
     color 0.25s;
 }
-
-/* hover như button quân đội */
 .menu a:hover {
-  background-color: rgba(255, 205, 0, 0.18); /* vàng cờ */
+  background-color: rgba(255, 205, 0, 0.18); 
   color: #ffcd00;
   transform: scale(1.06);
 }
-
 @media (max-width: 768px) {
-  /* Hiện biểu tượng hamburger */
   .menu-icon {
     display: inline-block;
   }
-  /* Ẩn menu mặc định */
   .menu {
     max-height: 0;
     overflow: hidden;
@@ -226,43 +188,34 @@ a {text-decoration: underline;}
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding-left: 0;
   }
-  /* Khi checkbox checked thì show menu */
   #menu-toggle:checked + .menu-icon + .menu {
-    max-height: 1000px; /* Đủ cao để menu hiện */
+    max-height: 1000px; 
     margin-top: 5px;
   }
-  /* Menu dọc trên điện thoại */
   .menu li {
     display: block;
     border-bottom: 1px solid #ddd;
   }
 }
-/* ===== MOBILE MENU ===== */
 .mobile-menu {
   position: relative;
   z-index: 1000;
 }
-
-/* Ẩn checkbox */
 #menu-toggle {
   display: none;
 }
-
-/* ICON ☰ */
 .menu-icon {
   position: fixed;
   top: 12px;
   left: 12px;
   font-size: 26px;
-  background: #0a3d2e; /* xanh quân đội */
+  background: #0a3d2e;
   color: #fff;
   padding: 10px 14px;
   border-radius: 6px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-
-/* PANEL MENU */
 .menu-panel {
   position: fixed;
   top: 0;
@@ -278,23 +231,17 @@ a {text-decoration: underline;}
   padding-top: 70px;
   transition: 0.4s ease;
 }
-
-/* HIỆN MENU */
 #menu-toggle:checked ~ .menu-panel {
   left: 0;
 }
-
-/* DANH SÁCH */
 .menu-panel ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .menu-panel li {
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-
 .menu-panel a {
   display: block;
   padding: 14px 20px;
@@ -303,15 +250,12 @@ a {text-decoration: underline;}
   font-size: 15px;
   font-weight: 500;
 }
-
-/* HOVER / ACTIVE */
 .menu-panel a:hover {
-  background: rgba(255,205,0,0.15); /* vàng cờ */
+  background: rgba(255,205,0,0.15); 
   color: #ffcd00;
   padding-left: 26px;
   transition: 0.3s;
 }
-
 </style>
   </head>
   <body>
@@ -449,21 +393,21 @@ Nguồn hình ảnh: <a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-mo
               <p class="desktop-text w3-center"><strong>Việt Nam được chia thành ba miền chính:</strong></p>
     <p class="mobile-text"><strong>-----Việt Nam được chia thành ba miền chính:-----</strong></p>
     <div class="w3-third w3-container w3-margin-bottom">
-      <a href="https://giabao23123.github.io/mienvietnam/#miennam">
+      <a href="https://giabao23123.github.io/mienvietnam/#miennam" target="_blank">
       <div class="w3-container w3-white w3-center bu">
         <p><b><u>Miền Nam</u></b></p>
             </a>
       </div>
     </div>
         <div class="w3-third w3-container w3-margin-bottom">
-      <a href="https://giabao23123.github.io/mienvietnam/#mientrung">
+      <a href="https://giabao23123.github.io/mienvietnam/#mientrung" target="_blank">
       <div class="w3-container w3-white w3-center bu">
         <p><b><u>Miền Trung</u></b></p>
             </a>
       </div>
     </div>
         <div class="w3-third w3-container w3-margin-bottom">
-      <a href="https://giabao23123.github.io/mienvietnam/#mienbac">
+      <a href="https://giabao23123.github.io/mienvietnam/#mienbac" target="_blank">
       <div class="w3-container w3-white w3-center bu">
         <p><b><u>Miền Bắc</u></b></p>
             </a>
@@ -535,10 +479,9 @@ Nguồn hình ảnh: <a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-mo
               class="gallery-image"
             />
             <div class="gallery-overlay">
-              <p class="gallery-caption">Tổng Bí thư Tô Lâm</p>
+              <p class="gallery-caption  ">Tổng Bí thư Tô Lâm</p>
             </div>
           </div>
-                                  <p class="  only-safari">Tổng Bí thư Tô Lâm</p>
           </div>
           <div>
           <div class="gallery-item">
@@ -548,11 +491,9 @@ Nguồn hình ảnh: <a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-mo
               class="gallery-image"
             />
             <div class="gallery-overlay">
-              <p class="gallery-caption">Chủ tịch nước Lương Cường</p>
+              <p class="gallery-caption  ">Chủ tịch nước Lương Cường</p>
             </div>
           </div>
-          
-                                  <p class="  only-safari">Chủ tịch nước Lương Cường</p>
                                   </div>
           <div class="gallery-item">
             <img
@@ -562,10 +503,9 @@ Nguồn hình ảnh: <a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-mo
             />
             <div>
             <div class="gallery-overlay">
-              <p class="gallery-caption">Thủ tướng Chính phủ Phạm Minh Chính</p>
+              <p class="gallery-caption  ">Thủ tướng Chính phủ Phạm Minh Chính</p>
             </div>
           </div>
-                                  <p class="  only-safari">Thủ tướng Chính phủ Phạm Minh Chính</p>
                                   </div>
                                   <div>
                     <div class="gallery-item">
@@ -576,13 +516,11 @@ Nguồn hình ảnh: <a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-mo
             />
             
             <div class="gallery-overlay">
-              <p class="gallery-caption">Chủ tịch Quốc hội Trần Thanh Mẫn</p>
+              <p class="gallery-caption  ">Chủ tịch Quốc hội Trần Thanh Mẫn</p>
             </div>
           </div>
-                                  <p class="  only-safari">Chủ tịch Quốc hội Trần Thanh Mẫn</p>
                                   </div>
                                   <div>
-
                     <div class="gallery-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Tr%E1%BA%A7n_c%E1%BA%A9m_t%C3%BA.jpg/250px-Tr%E1%BA%A7n_c%E1%BA%A9m_t%C3%BA.jpg"
@@ -590,11 +528,9 @@ Nguồn hình ảnh: <a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-mo
               class="gallery-image"
             />
             <div class="gallery-overlay">
-              <p class="gallery-caption ">Thường trực Ban Bí thư Trần Cẩm Tú</p>
+              <p class="gallery-caption  ">Thường trực Ban Bí thư Trần Cẩm Tú</p>
             </div>
           </div>
-                                  <p class="  only-safari" >Thường trực Ban Bí thư Trần Cẩm Tú</p>
-                                                                      
                                   </div>
                                   <div>
                     <div class="gallery-item">
@@ -604,10 +540,9 @@ Nguồn hình ảnh: <a href="https://thuvienphapluat.vn/chinh-sach-phap-luat-mo
               class="gallery-image"
             />
             <div class="gallery-overlay">
-              <p class="gallery-caption">the biggest ego in the world</p>
+              <p class="gallery-caption  ">the biggest ego in the world</p>
             </div>
           </div>
-                                  <p class=" ">the biggest ego in the world</p>
             </div>
             </div>
               <p class="w3-source">
@@ -1597,5 +1532,3 @@ Nguồn hình ảnh: <a href="https://www.mod.gov.vn/vn/noi-dung/sa-qlcddh/sa-ql
     
   </body>
 </html>
-
-
